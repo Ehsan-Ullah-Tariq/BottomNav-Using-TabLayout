@@ -131,7 +131,6 @@ class LoginActivity : AppCompatActivity() {
             if (account?.displayName != null
                 && account.email != null
             ) {
-
                 val editPrefs = getSharedPreferences(MY_PREFS_KEY, MODE_PRIVATE).edit()
                 val userID: String? = account.id
                 editPrefs.putString(USER_ID, userID)
