@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.activites.MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/new_dark_grey">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_180sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/fox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:buttonTint="@color/pink"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="CrazySkins"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:background="@drawable/edittext_background"
+            android:drawableEnd="@drawable/ic_email"
+            android:fontFamily="@font/montserratmedium"
+            android:hint="Email.."
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:singleLine="true"
+            android:textColorHint="@color/greyColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvEarnPoints" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:background="@drawable/edittext_background"
+            android:drawableEnd="@drawable/ic__key"
+            android:fontFamily="@font/montserratmedium"
+            android:hint="8 characters pin.."
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:singleLine="true"
+            android:textColorHint="@color/greyColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etLoginEmail" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/tvEarnPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:buttonTint="@color/pink"
+            android:fontFamily="@font/montserratmedium"
+            android:text="Play Games. Get Skins"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvWelcome" />
+
+
+        <CheckBox
+            android:id="@+id/acceptPolicies"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:buttonTint="@color/pink"
+            android:fontFamily="@font/montserratregular"
+            android:text="I accept privacy policies"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@+id/etLoginPassword"
+            app:layout_constraintTop_toBottomOf="@+id/etLoginPassword" />
+
+        <CheckBox
+            android:id="@+id/acceptTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:buttonTint="@color/pink"
+            android:fontFamily="@font/montserratregular"
+            android:text="I accept terms and conditions"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@+id/acceptPolicies"
+            app:layout_constraintTop_toBottomOf="@id/acceptPolicies" />
+
+        <TextView
+            android:id="@+id/emailSignInBtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:background="@drawable/background_pink_capsule"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/montserratmedium"
+            android:gravity="center"
+            android:text="Sign In / Sign Up"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintTop_toBottomOf="@id/acceptTerms"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvOr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:buttonTint="@color/pink"
+            android:fontFamily="@font/montserratmedium"
+            android:text="Or"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailSignInBtn" />
+
+        <TextView
+            android:id="@+id/googleSignInBtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_pink_capsule"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/montserratmedium"
+            android:gravity="center"
+            android:text="Sign In with Google"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvOr" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "107467605241",
+    "project_id": "crazy-skins-8eb31",
+    "storage_bucket": "crazy-skins-8eb31.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107467605241:android:29396bfcf099b339b6ce28",
+        "android_client_info": {
+          "package_name": "com.android.crazyskins"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107467605241-b865pgkemlhi4p87m6j3n1iijluqim1r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.crazyskins",
+            "certificate_hash": "1ff76ce6e5fb850e4683accc6b8a1d1747181c6c"
+          }
+        },
+        {
+          "client_id": "107467605241-0al6cc23iaqqadkhm80nu5bgli1m2dh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmOYiCUihvv-X1fZTeHK1rYQ-pTnju2lk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107467605241-0al6cc23iaqqadkhm80nu5bgli1m2dh9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
