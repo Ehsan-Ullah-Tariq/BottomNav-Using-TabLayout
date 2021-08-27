@@ -99,7 +99,7 @@
 
         <CheckBox
             android:id="@+id/acceptPolicies"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_6sdp"
             android:buttonTint="@color/pink"
@@ -108,6 +108,7 @@
             android:textColor="@color/white"
             android:textSize="@dimen/_10sdp"
             app:layout_constraintEnd_toEndOf="@+id/etLoginPassword"
+            app:layout_constraintStart_toStartOf="@+id/etLoginPassword"
             app:layout_constraintTop_toBottomOf="@+id/etLoginPassword" />
 
         <CheckBox
@@ -119,8 +120,10 @@
             android:fontFamily="@font/montserratregular"
             android:text="I accept terms and conditions"
             android:textColor="@color/white"
+            android:gravity="center"
             android:textSize="@dimen/_10sdp"
             app:layout_constraintEnd_toEndOf="@+id/acceptPolicies"
+            app:layout_constraintStart_toStartOf="@+id/acceptPolicies"
             app:layout_constraintTop_toBottomOf="@id/acceptPolicies" />
 
         <TextView
